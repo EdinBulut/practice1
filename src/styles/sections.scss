@@ -30,18 +30,19 @@ a.section-info {
   align-items: center;
   justify-content: center;
   background-color: #F9DB79;
-  height: 100vh;
+  height: 85vh;
 }
 
 .section-hiro.first-hero {
   height: calc(100vh - 152px);
-//   background-image: url('../assets/images/products/kornet-1.png');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
+  filter: sepia(10%);
+  background-image: url('../assets/images/carousel/Kornet-20.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .section-flavor {
   display: flex;
-  height: 100vh;
+  height: 85vh;
 }
