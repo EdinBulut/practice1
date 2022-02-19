@@ -21,3 +21,25 @@ body{
   [hidden] {
       visibility: hidden;
   }
+
+  .swiper-pagination-bullets {
+    z-index: 1000 !important;
+  
+    .swiper-pagination-bullet {
+      z-index: 1000 !important;
+      background: #dfac4de1 !important;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      margin: 0 .75em !important;
+      height: 0.6em;
+      width: 0.6em;
+      opacity: 0.6;
+    }
+  
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+      color: #333;
+  }

@@ -1,0 +1,88 @@
+swiper {
+  width: 100%;
+  height: 35vh;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  transition: all ease-in-out 0.8s;
+  &:hover {
+    height: 60vh;
+  }
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: fit-content;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-wrapper {
+  box-sizing: border-box;
+  background-color: #d3d3d3;
+  // width: 100vw;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-color: #d3d3d3;
+  // background-color: greenyellow;
+  // height: calc(100vh - 6em);
+  // padding-top: 6em;	
+  text-align: center;
+  // font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  // padding: .5em;
+  // box-sizing: content-box;
+  // margin: 0 !important;
+  height: 100%;
+  img {
+    height: 500px;
+  }
+}
+
+.slide-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(55%);
+  transition: all ease-in-out 0.6s;
+  &:hover {
+    filter: grayscale(15%);
+  }
+}
+.first-image {
+  background-image: url("../../../../assets/images/carousel/Kornet-22.jpg");
+}
+.second-image {
+  background-image: url("../../../../assets/images/carousel/Kornet-22.jpg");
+}
+.third-image {
+  background-image: url("../../../../assets/images/carousel/Kornet-22.jpg");
+}
+.fourth-image {
+  background-image: url("../../../../assets/images/carousel/Kornet-35.jpg");
+}
+.fifth-image {
+  background-image: url("../../../../assets/images/carousel/Kornet-30.jpg");
+}
+// .sixth-image {
+//   background-image: url("../../../assets/images/product-imgs/Kornet-24.jpg");
+// }
+
+
