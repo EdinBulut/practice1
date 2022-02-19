@@ -36,6 +36,7 @@
               "src/styles/text.scss",
               "src/styles/boxes.scss",
               "src/styles/sections.scss",
+              "src/styles/parallax.scss",
               "src/styles/flexbox.scss"
             ],
             "scripts": [
