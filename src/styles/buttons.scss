@@ -1,0 +1,21 @@
+.button-white {
+  border: 3px solid white;
+  padding: 2px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.button-dark {
+    text-decoration: none;
+  border: 3px solid black;
+  padding: 2px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+  &:hover {
+      background-color: #000;
+      h5.dark {
+          color: #fff;
+      }
+  }
+}

@@ -33,6 +33,8 @@
             "styles": [
               "src/styles/styles.scss",
               "src/styles/buttons.scss",
+              "src/styles/text.scss",
+              "src/styles/boxes.scss",
               "src/styles/sections.scss",
               "src/styles/flexbox.scss"
             ],

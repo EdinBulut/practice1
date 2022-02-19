@@ -1,0 +1,43 @@
+.section-info {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    color: #E8E8E8;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+  }
+}
+
+a.section-info {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  h3 {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: #2f3640;
+  }
+}
+
+.section-hiro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9DB79;
+  height: 100vh;
+}
+
+.section-hiro.first-hero {
+  height: calc(100vh - 152px);
+}
+
+.section-flavor {
+  display: flex;
+  height: 100vh;
+}
