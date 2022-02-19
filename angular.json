@@ -34,7 +34,10 @@
               "src/styles/styles.scss",
               "src/styles/flexbox.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/jquery-parallax.js/parallax.min.js"
+            ]
           },
           "configurations": {
             "production": {
