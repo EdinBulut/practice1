@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 
   h3 {
     color: #E8E8E8;
@@ -15,6 +16,7 @@ a.section-info {
   cursor: pointer;
   text-decoration: none;
   transition: all ease 0.3s;
+  height: 60px;
   h3 {
     font-size: 16px;
   }

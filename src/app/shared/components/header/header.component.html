@@ -1,4 +1,4 @@
-<div class="nav-container">
+<div class="nav-container" [ngClass]="{'navbar-inverse': isScrolled}">
     <ul>
         <li routerLink="home" routerLinkActive="active">Home</li>
         <li routerLink="products" routerLinkActive="active">Products</li>
