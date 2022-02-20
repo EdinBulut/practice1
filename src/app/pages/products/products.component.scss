@@ -14,6 +14,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  // margin-bottom: -50vh;
+  padding-bottom: 50px;
 }
 
 .product-section {
@@ -22,6 +24,7 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 .product-section:first-of-type {
   margin-top: 30px;
@@ -75,7 +78,6 @@
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
   background-color: #fff;
   transition: all ease-in-out .5s;
   border: 4px solid;
@@ -98,7 +100,16 @@
   p.middle-paragraph {
     margin-bottom: 4px;
   }
+}
 
+.opacity-1-to-0 {
+  opacity: 1;
+  &:hover {
+    opacity: 0;
+  }
+}
+.opacity-0-to-1 {
+  opacity: 0;
   &:hover {
     opacity: 1;
   }
