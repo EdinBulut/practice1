@@ -3,13 +3,18 @@
     background-color: #000;
     margin-top: 50vh;
     display: flex;
-    padding: 15vh 3%;
+    padding: 0 5%;
+    position: relative;
 }
 .footer-left{
-    flex: 2;
+    flex: 1.5;
+    padding: 10% 0;
 }
 .footer-right{
     flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .footer{
     display: flex;
@@ -22,6 +27,42 @@
 .footer-tab h5{
     margin-bottom: 20px;
 }
-h6{
+.footer-tab a{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: initial;
     margin: 0 0 10px 0;
+    text-decoration: none;
+    color: #fff;
+}
+h6{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: initial;
+    margin: 0 0 10px 0;
+}
+.footer-logo img{
+    height: 150px;
+    filter: invert(100%);
+    margin-bottom: 20px;
+}
+.footer-social{
+    margin-left: 20px;
+}
+.footer-social img{
+    height: 30px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    margin-right: 20px;
+    cursor: pointer;
+    &:hover{
+       filter: invert(41%) sepia(28%) saturate(2572%) hue-rotate(6deg) brightness(96%) contrast(98%);
+       transition: all .3s ease;
+    }
+}
+.footer-rights{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+
 }
