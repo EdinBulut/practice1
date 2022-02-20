@@ -1,0 +1,27 @@
+.section-footer{
+    // height: 50vh;
+    background-color: #000;
+    margin-top: 50vh;
+    display: flex;
+    padding: 15vh 3%;
+}
+.footer-left{
+    flex: 2;
+}
+.footer-right{
+    flex: 1;
+}
+.footer{
+    display: flex;
+}
+.footer-tab{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.footer-tab h5{
+    margin-bottom: 20px;
+}
+h6{
+    margin: 0 0 10px 0;
+}

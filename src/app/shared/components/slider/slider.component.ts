@@ -8,34 +8,36 @@ import { SwiperOptions } from 'swiper';
 })
 export class SliderComponent implements OnInit {
   config: SwiperOptions = {
-    pagination: { el: '.swiper-pagination', clickable: true },
+    // pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    // spaceBetween: 0,
-    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerView: 4,
+    // slidesPerGroup:1,
+    // centeredSlides:true,
     autoplay: {
       delay: 1,
       disableOnInteraction: false
     },
 
     // effect: 'coverflow',
-    // grabCursor: true,
+    grabCursor: false,
     // slidesPerView: 2,
     loop: true,
     loopFillGroupWithBlank: true,
-    speed: 5000,
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 10,
-    //   },
-    //   1250: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 20
-    //   },
-    // }
+    speed: 2000,
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1250: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    }
   };
 
   constructor() { }
