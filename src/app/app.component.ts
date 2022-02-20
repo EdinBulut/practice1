@@ -9,6 +9,8 @@ export class AppComponent implements AfterContentInit {
   canShow = false
 
   ngAfterContentInit(): void {
+
       this.canShow = true
+
   }
 }
