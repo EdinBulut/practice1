@@ -31,6 +31,7 @@
     font-size: 16px;
     font-weight: 400;
     text-transform: initial;
+    font-family: "Barlow Condensed", sans-serif;
     margin: 0 0 10px 0;
     text-decoration: none;
     color: #fff;
@@ -64,5 +65,10 @@ h6{
     position: absolute;
     left: 5%;
     bottom: 5%;
+    display: flex;
+}
+.footer-rights img{
+    height: 20px;
+    margin-left: 5px;
 
 }
