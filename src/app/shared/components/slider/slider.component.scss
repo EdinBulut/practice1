@@ -1,13 +1,14 @@
 swiper {
   width: 100%;
-  height: 35vh;
+  height: 50%;
   position: absolute;
   display: flex;
   overflow: hidden;
   transition: all ease-in-out 0.8s;
-  &:hover {
-    height: 60vh;
-  }
+  background-color: #000;
+  // &:hover {
+  //   height: 60vh;
+  // }
 }
 
 
@@ -16,6 +17,7 @@ swiper {
   width: fit-content;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
 
@@ -51,9 +53,16 @@ swiper {
   // box-sizing: content-box;
   // margin: 0 !important;
   height: 100%;
+  cursor: pointer;
   img {
-    height: 500px;
+    // height: 500px;
+    
+    
   }
+  &:hover{
+    filter: brightness(50%);
+    transition: all .3s ease;
+ }
 }
 
 .slide-img {
@@ -85,4 +94,33 @@ swiper {
 //   background-image: url("../../../assets/images/product-imgs/Kornet-24.jpg");
 // }
 
-
+.content-1{
+  background-image: url('/assets/images/carousel/ice-cream-1.jpg');
+}
+.content-2{
+  background-image: url('/assets/images/carousel/ice-cream-2.jpg');
+}
+.content-3{
+  background-image: url('/assets/images/carousel/ice-cream-3.jpg');
+}
+.content-4{
+  background-image: url('/assets/images/carousel/ice-cream-4.jpg');
+}
+.content-5{
+  background-image: url('/assets/images/carousel/ice-cream-5.jpg');
+}
+.content-6{
+  background-image: url('/assets/images/carousel/Kornet-20.jpg');
+}
+.content-7{
+  background-image: url('/assets/images/carousel/Kornet-22.jpg');
+}
+.content-8{
+  background-image: url('/assets/images/carousel/Kornet-24.jpg');
+}
+.content-9{
+  background-image: url('/assets/images/carousel/Kornet-30.jpg');
+}
+.content-10{
+  background-image: url('/assets/images/carousel/Kornet-34.jpg');
+}
