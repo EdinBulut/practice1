@@ -2,6 +2,16 @@ h1, h2, h3, h5, h6 {
   color: white;
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
+  cursor: default;
+}
+
+h4 {
+  cursor: default;
+}
+p {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  cursor: default;
 }
 
 h1 {
@@ -44,4 +54,12 @@ h5 {
 
 .yellow-text {
   color: #F9DB79;
+}
+
+.middle-paragraph {
+  font-size: 24px;
+}
+.small-paragraph {
+  font-size: 20px;
+  line-height: 24px;
 }

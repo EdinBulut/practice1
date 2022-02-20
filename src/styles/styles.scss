@@ -9,6 +9,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 
 
 body{
@@ -50,4 +53,19 @@ body{
   .swiper-button-next, .swiper-button-prev {
       color: rgb(0, 0, 0);
       text-shadow: 2px 2px rgb(100, 100, 100);
+  }
+
+
+  .opake-animation {
+    opacity: 0;
+    animation: opake 1.5s 0.2s forwards;
+  }
+
+  @keyframes opake {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
