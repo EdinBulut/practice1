@@ -37,7 +37,7 @@ a.section-info {
 }
 
 .section-hiro.first-hero {
-  height: calc(100vh - 152px);
+  height: calc(100vh - 60px);
   filter: sepia(10%);
   background-image: url('../assets/images/carousel/Kornet-20.jpg');
   background-repeat: no-repeat;
@@ -45,7 +45,8 @@ a.section-info {
   background-size: cover;
 }
 
-.section-flavor {
+.section-flavor,
+.section-about-info {
   display: flex;
   height: 85vh;
 }
