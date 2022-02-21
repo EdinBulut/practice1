@@ -52,7 +52,7 @@
   // background: #FFBFB3;
   
   img {
-    width: 100%;
+    width: 110%;
     transition: all ease-out .3s;
     &:hover {
       transform: scale(1.05);
@@ -170,6 +170,16 @@ img.dimensions {
 .pink-stripes {
   background: repeating-linear-gradient(
     25deg,
+    #FFBFB3,
+    #FFBFB3 60px,
+    #fff 60px,
+    #fff 120px
+  );
+}
+
+.pink-stripes-25 {
+  background: repeating-linear-gradient(
+    -25deg,
     #FFBFB3,
     #FFBFB3 60px,
     #fff 60px,
@@ -319,10 +329,16 @@ img.dimensions {
 .mb-50 {
   margin-bottom: 50px;
 }
+
 .mt-50 {
   margin-top: 50px;
 }
 
+.mt-20 {
+  margin-top: 40px;
+}
+
 h2 {
+  margin: 0;
   transition: all ease-in-out .15s;
 }
