@@ -15,7 +15,7 @@ export class SliderComponent implements OnInit {
     },
     spaceBetween: 0,
     slidesPerView: 4,
-    // slidesPerGroup:1,
+    slidesPerGroup:1,
     // centeredSlides:true,
     autoplay: {
       delay: 1,
