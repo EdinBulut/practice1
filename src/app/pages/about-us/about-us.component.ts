@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import simpleParallax from 'simple-parallax-js';
+
 
 @Component({
   selector: 'app-about-us',
