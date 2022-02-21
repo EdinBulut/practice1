@@ -46,6 +46,7 @@
 }
 
 .img-part {
+  overflow: hidden;
   width: 55%;
   justify-content: center;
   // background: #FFBFB3;
@@ -237,13 +238,13 @@ img.dimensions {
   );
 }
 
-.blue-stripes-90 {
+.blue-stripes-30 {
   background: repeating-linear-gradient(
-    0deg,
+    -30deg,
     #74b9ffb3,
-    #74b9ffb3 30px,
-    #fff 30px,
-    #fff 60px
+    #74b9ffb3 70px,
+    #fff 70px,
+    #fff 140px
   );
 }
 
