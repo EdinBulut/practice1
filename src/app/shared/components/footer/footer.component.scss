@@ -31,6 +31,7 @@
     font-size: 16px;
     font-weight: 400;
     text-transform: initial;
+    font-family: "Barlow Condensed", sans-serif;
     margin: 0 0 10px 0;
     text-decoration: none;
     color: #fff;
@@ -56,7 +57,7 @@ h6{
     margin-right: 20px;
     cursor: pointer;
     &:hover{
-       filter: invert(41%) sepia(28%) saturate(2572%) hue-rotate(6deg) brightness(96%) contrast(98%);
+       filter: invert(92%) sepia(10%) saturate(667%) hue-rotate(102deg) brightness(98%) contrast(88%);
        transition: all .3s ease;
     }
 }
@@ -64,5 +65,10 @@ h6{
     position: absolute;
     left: 5%;
     bottom: 5%;
+    display: flex;
+}
+.footer-rights img{
+    height: 20px;
+    margin-left: 5px;
 
 }

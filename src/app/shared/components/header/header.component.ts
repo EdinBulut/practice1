@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router,) { }
   @HostListener("window:scroll")
   scrollEvent() {
-      window.pageYOffset >= 50 ? (this.isScrolled = true) : (this.isScrolled = false);
+      window.pageYOffset >= 60 ? (this.isScrolled = true) : (this.isScrolled = false);
   }
   
   ngOnInit(): void {
