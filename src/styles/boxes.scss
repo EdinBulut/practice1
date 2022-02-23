@@ -20,7 +20,7 @@ h4.content-subtitle {
   font-family: 'Marck Script', cursive;
   font-size: 21px;
   margin: 0;
-  margin-top: -20px;
+  margin-top: 10px;
 }
 
 .image-box {
@@ -31,7 +31,7 @@ h4.content-subtitle {
 .image-box-about {
   background-position: center;
   background-repeat: no-repeat;
-  flex-grow: 1;
+  flex-grow: 1.5;
 }
 
 .box-1 {
@@ -43,6 +43,8 @@ h4.content-subtitle {
 }
 .box-about-2 {
   background-image: url("../assets/images/old-images/old-images-1.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .box-3 {
