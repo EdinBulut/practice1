@@ -1,8 +1,9 @@
 .section-hiro {
   // background: #C3A9D4;
   background: #FFBFB3;
-  height: 40vh;
-  animation: height-change 1s forwards;
+  height: 0;
+  animation: height-change 1s .5s forwards;
+  overflow: hidden;
 }
 
 .content-subtitle {
