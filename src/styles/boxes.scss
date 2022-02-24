@@ -50,3 +50,9 @@ h4.content-subtitle {
 .box-3 {
   background-image: url("../assets/images/carousel/Kornet-34.jpg");
 }
+@media only screen and (max-width: 600px){
+  .image-box {
+    background-size: cover;
+    flex-grow: 1;
+  }
+}
