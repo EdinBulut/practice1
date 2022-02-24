@@ -11,6 +11,7 @@ import { HostListener } from '@angular/core';
 export class HeaderComponent implements OnInit {
  
   isScrolled = false;
+  isTransparent = false;
   constructor(private router: Router,) { }
   @HostListener("window:scroll")
   scrollEvent() {

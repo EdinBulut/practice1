@@ -10,13 +10,12 @@
     z-index: 1000;
     margin-top: 50px;
     background-color: transparent;
-    transition: all .3s ease;
-     
+    transition: margin-top .3s ease, background-color .3s ease -.1s;
 }
 .nav-inverse{
     margin-top: 0;
     background-color: rgba(255, 255, 255, 0.8);
-    // transition: background-color .5s ease;
+    transition:background-color .3s ease .1s,margin-top .3s ease;
     .logo-wrapper{
         opacity: 1;
     }
@@ -39,6 +38,7 @@
     text-transform: uppercase;
     transition: ease .3s all;
     cursor: pointer;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.1);
 }
 .active{
     color: rgb(126, 126, 126);

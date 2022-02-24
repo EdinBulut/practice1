@@ -11,6 +11,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { LazyimgDirective } from './lazyimg.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
     ProductsComponent,
     ContactComponent,
     SliderComponent,
+    LazyimgDirective,
   ],
   imports: [
     BrowserModule,

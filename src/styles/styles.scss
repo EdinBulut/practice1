@@ -67,3 +67,12 @@ body{
       opacity: 1;
     }
   }
+
+  @keyframes height-change {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 40vh;
+    }
+  }

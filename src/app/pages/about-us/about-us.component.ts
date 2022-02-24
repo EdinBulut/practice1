@@ -14,11 +14,7 @@ export class AboutUsComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    // const image = document.getElementsByClassName('thumbnail');
-    // new simpleParallax(image, {
-
-    // });
-    
+    window.scroll(0,0)
   }
 
   
