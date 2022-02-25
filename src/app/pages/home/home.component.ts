@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  @ViewChild ('slider', { static: false }) slider!: ElementRef<HTMLElement>
 
   constructor() { }
 
@@ -14,8 +15,8 @@ export class HomeComponent implements OnInit {
   }
   
   scrollToBottom() {
-    window.scroll(0,10000)
-
+    // window.scroll(0,10000)
+    this.slider.nativeElement.scrollIntoView({behavior: "smooth", block: "start"})
   }
    
 }

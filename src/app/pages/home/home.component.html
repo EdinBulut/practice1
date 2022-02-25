@@ -46,9 +46,9 @@
     <h3 class="yellow-text">Naš recept</h3>
     <h4 class="content-subtitle">Najviše pažnje posvećeno kvaliteti</h4>
     <p class="dark-text">Čvrsti, hrskavi, odličnog ukusa i savršeno pečeni naš su recept za zadovoljnog kupca.</p>
-    <div class="button button-dark">
+    <a class="button button-dark" [routerLink]="['/products']">
       <h5 class="yellow-text">Pogledajte</h5>
-    </div>
+    </a>
   </div>
   <div class="flavor-box box-2 image-box">
   </div>
@@ -67,28 +67,26 @@
   <div class="flavor-box box-3 image-box">
   </div>
   <div class="flavor-box about-padding">
-    <h3 class="dark-text">Dessertss</h3>
-    <h6>Ice cream goodies</h6>
-    <p class="dark-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-      Text” or double click
-      me to add your own content and make changes to the font.</p>
-    <div class="button button-dark">
-      <h5 class="dark-text">Menu</h5>
-    </div>
+    <h3 class="yellow-text">U Prijedoru smo</h3>
+    <h4 class="content-subtitle">Posjeti nas u gradu na rijeci Sani</h4>
+    <a class="button button-dark mt-50" [routerLink]="['/contact']">
+      <h5 class="yellow-text">NAŠA LOKACIJA</h5>
+    </a>
   </div>
 </div>
 
 <div class="parallax-init parallax-bg3">
   <h3>Osjeti ukus preko slike</h3>
     <h1>Čvrsti i hrskavi</h1>
-    <div class="button button-white" (click)="scrollToBottom()">
+    <a class="button button-white" (click)="scrollToBottom()">
       <h5>Galerija</h5>
-    </div>
+    </a>
 </div>
 
 
-  
-<app-slider></app-slider>
+<div #slider>
+  <app-slider></app-slider>
+</div>
 
 </div>
 
