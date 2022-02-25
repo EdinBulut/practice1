@@ -39,7 +39,9 @@ h4.content-subtitle {
 }
 
 .box-2 {
-  background-image: url("../assets/images/carousel/Kornet-30.jpg");
+  background-image: url("../assets/images/background-images/background-image-2.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .box-about-2 {
   background-image: url("../assets/images/old-images/old-images-1.jpg");
@@ -48,7 +50,9 @@ h4.content-subtitle {
 }
 
 .box-3 {
-  background-image: url("../assets/images/carousel/Kornet-34.jpg");
+  background-image: url("../assets/images/background-images/background-image-4.jpg");
+  background-position: center;
+  background-size: cover;
 }
 @media only screen and (max-width: 600px){
   .image-box {

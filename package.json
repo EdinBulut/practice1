@@ -18,7 +18,6 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
-    "jquery-parallax.js": "^1.5.0",
     "ngx-useful-swiper": "^10.0.1",
     "rxjs": "~7.5.0",
     "swiper": "^6.8.1",
