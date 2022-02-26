@@ -1,3 +1,13 @@
+<a class="section-info " [routerLink]="['/contact']">
+    <h3>
+      <ng-container *ngIf="language ==='BOS'">
+        Žarka Zgonjanina 64, Prijedor 79101 | Svaki dan 8:00 - 20:00
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Žarka Zgonjanina 64, Prijedor 79101 | Daily 8AM - 20:00
+      </ng-container>
+    </h3>
+  </a>
 <div class="nav-container" [ngClass]="{'nav-inverse': isScrolled}">
     <ul>
         <li routerLink="home" routerLinkActive="active">Početna</li>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
-  
+  language = 'BOS'
   
   constructor() {
    
@@ -15,6 +15,7 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit(): void {
     window.scroll(0,0)
+    
   }
 
   
