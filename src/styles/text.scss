@@ -1,4 +1,8 @@
-h1, h2, h3, h5, h6 {
+h1,
+h2,
+h3,
+h5,
+h6 {
   color: white;
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
@@ -6,7 +10,14 @@ h1, h2, h3, h5, h6 {
 }
 
 a {
-  h1, h2, h3, h4, h5, h6, p {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     cursor: pointer;
   }
 }
@@ -14,6 +25,7 @@ a {
 h4 {
   cursor: default;
 }
+
 p {
   color: white;
   font-family: "Barlow Condensed", sans-serif;
@@ -61,6 +73,11 @@ h5 {
 .yellow-text {
   color: #F9DB79;
 }
+
+.green-text {
+  color: #B5E8D5;
+}
+
 .light-blue-text {
   color: #B5E8D5;
 }
@@ -68,23 +85,32 @@ h5 {
 .middle-paragraph {
   font-size: 24px;
 }
+
 .small-paragraph {
   font-size: 20px;
   line-height: 24px;
 }
-@media only screen and (max-width: 600px){
-  h1{
+
+.ta-start{
+  text-align: start;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
     font-size: 60px;
     line-height: 60px;
     text-align: center;
   }
-  h2{
+
+  h2 {
     font-size: 40px;
   }
-  h3{
+
+  h3 {
     font-size: 16px;
   }
-  h5{
+
+  h5 {
     font-size: 20px;
   }
 }
