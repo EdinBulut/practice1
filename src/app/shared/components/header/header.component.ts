@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HostListener } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
 
@@ -16,7 +16,11 @@ export class HeaderComponent implements OnInit {
   isScrolled = false;
   isTransparent = false;
   language = 'BOS'
-  constructor(private router: Router, private languageService: LanguageService) { }
+  constructor(
+    public router: Router, 
+    private languageService: LanguageService,
+    private route: ActivatedRoute
+    ) { }
   @HostListener("window:scroll")
   scrollEvent() {
       window.pageYOffset >= 60 ? (this.isScrolled = true) : (this.isScrolled = false);
@@ -38,6 +42,10 @@ export class HeaderComponent implements OnInit {
     else this.language = 'BOS'
     this.languageService.postLanguage(this.language)
     localStorage.setItem('language', this.language)
+  }
+
+  closeMenu() {
+    this.openMenu = false
   }
 
 }

@@ -47,7 +47,7 @@
       </ng-container>
     </li>
   </ul>
-  <div class="logo-wrapper" routerLink="home">
+  <div class="logo-wrapper" routerLink="home" *ngIf="!openMenu">
     <img src="../../../../assets/images/logo/transparent-logo.svg" alt="">
   </div>
   <div class="nav-right-social" *ngIf="!mobile">
@@ -64,18 +64,42 @@
  </div>
 
  <div class="menu" *ngIf="mobile" [class.open-menu]='openMenu'>
-  <ul class="navigation-mobile">
-    <li >
-      HOME
+   <div class="logo-wrapper-mobile">
+       <img src="../../../../assets/images/logo/transparent-logo.svg" alt="">
+   </div>
+  
+   <ul class="navigation-mobile">
+    <li routerLink="home" routerLinkActive="active" (click)="closeMenu()">
+      <ng-container *ngIf="language ==='BOS'">
+        Početna
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Home
+      </ng-container>
     </li>
-    <li >
-      PRODUCTS
+    <li routerLink="products" routerLinkActive="active" (click)="closeMenu()">
+      <ng-container *ngIf="language ==='BOS'">
+        Proizvodi
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Products
+      </ng-container>
     </li>
-    <li >
-      ABOUT US
+    <li routerLink="about-us" routerLinkActive="active" (click)="closeMenu()">
+      <ng-container *ngIf="language ==='BOS'">
+        O nama
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        About us
+      </ng-container>
     </li>
-    <li >
-      CONTACT
+    <li routerLink="contact" routerLinkActive="active" (click)="closeMenu()">
+      <ng-container *ngIf="language ==='BOS'">
+        Kontakt
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Contact
+      </ng-container>
     </li>
     
   </ul>
