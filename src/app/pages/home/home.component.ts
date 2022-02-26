@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { LanguageService } from 'src/app/shared/services/language.service';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +8,14 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   @ViewChild ('slider', { static: false }) slider!: ElementRef<HTMLElement>
+  language = 'BOS'
 
-  constructor() { }
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit(): void {
     window.scroll(0,0)
+    this.languageService.getLanguage()
+    .subscribe(data => this.language = data)
   }
   
   scrollToBottom() {

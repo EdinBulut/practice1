@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/shared/services/language.service';
 
 @Component({
   selector: 'app-products',
@@ -7,9 +8,12 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit, AfterViewInit {
   language = 'BOS'
-  constructor() { }
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit(): void {
+    
+    this.languageService.getLanguage()
+    .subscribe(data => this.language = data)
   }
   
   ngAfterViewInit(): void {
