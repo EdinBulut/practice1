@@ -3,14 +3,35 @@
     <img src="../../../assets/images/logo/transparent-logo-white.svg" alt="">
   </div>
 
-  <h1>PROIZVODI</h1>
-  <h4 class="content-subtitle">Pogledajte široku ponudu naših proizvoda</h4>
+  <h1>
+    <ng-container *ngIf="language ==='BOS'">
+      PROIZVODI
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      PRODUCTS
+    </ng-container>
+  </h1>
+  <h4 class="content-subtitle">
+    <ng-container *ngIf="language ==='BOS'">
+      Pogledajte široku ponudu naših proizvoda
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      Take a look at the wide range of our products
+    </ng-container> 
+  </h4>
 </div>
 
 
 <div class="products-wrapper opake-animation">
 
-  <h2 class="product-type-title hover-pink-text mt-50">KLASIČNI KORNETI</h2>
+  <h2 class="product-type-title hover-pink-text mt-50">
+    <ng-container *ngIf="language ==='BOS'">
+      KLASIČNI KORNETI
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      CLASSIC CORNETS
+    </ng-container> 
+  </h2>
 
   <div class="product-section mt-20">
     <div class="product-card">
@@ -18,18 +39,60 @@
         <img src="../../../assets/images/final-products/product-1.png" alt="">
       </div>
       <div class="content-part pink-background">
-        <h3>MALI</h3>
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            MALI
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            SMALL
+          </ng-container>
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-1-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper pink-border border-left-none opacity-0-to-1">
-          <h3>MALI KORNET</h3>
+          <h3>  
+            <ng-container *ngIf="language ==='BOS'">
+              MALI KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              SMALL CORNET
+            </ng-container>
+          </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 123mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 49mm</p>
-            <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 31,5mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 123mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 123mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 49mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 49mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                UNUTRAŠNJI Ø: 31,5mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                INNER Ø: 31,5mm
+              </ng-container>
+            </p>
           </div>
         </div>
       </div>
@@ -39,18 +102,55 @@
         <img src="../../../assets/images/final-products/product-2.png" alt="">
       </div>
       <div class="content-part yellow-background">
-        <h3>SUPER</h3>
+        <h3>
+          SUPER
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-2-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper yellow-border border-left-none opacity-1-to-0">
-          <h3>SUPER KORNET</h3>
+          <h3>
+            <ng-container *ngIf="language ==='BOS'">
+              SUPER KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              SUPER CORNET
+            </ng-container>
+          </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 133mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 50mm</p>
-            <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 37mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 133mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 133mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 50mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 50mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                UNUTRAŠNJI Ø: 37mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                INNER Ø: 37mm
+              </ng-container>
+            </p>
           </div>
         </div>
       </div>
@@ -62,18 +162,60 @@
 
     <div class="product-card">
       <div class="content-part yellow-background">
-        <h3>SREDNJI</h3>
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            SREDNJI
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            MEDIUM
+          </ng-container>
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-3-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper yellow-border border-right-none opacity-0-to-1">
-          <h3>SREDNJI KORNET</h3>
+          <h3>
+            <ng-container *ngIf="language ==='BOS'">
+              SREDNJI KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              MEDIUM CORNET
+            </ng-container>
+          </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 127mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 50,5mm</p>
-            <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 44mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 127mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 127mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 50,5mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 50,5mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                UNUTRAŠNJI Ø: 44mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                INNER Ø: 44mm
+              </ng-container>
+            </p>
           </div>
         </div>
       </div>
@@ -85,18 +227,60 @@
     <div class="product-card">
 
       <div class="content-part yellow-background">
-        <h3>VELIKI</h3>
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            VELIKI
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            LARGE
+          </ng-container>
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-4-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper yellow-border border-right-none opacity-1-to-0">
-          <h3>VELIKI KORNET</h3>
+          <h3>
+            <ng-container *ngIf="language ==='BOS'">
+              VELIKI KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              LARGE CORNET
+            </ng-container>
+          </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 160mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 59mm</p>
-            <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 53mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 160mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 160mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 59mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 59mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                UNUTRAŠNJI Ø: 53mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                INNER Ø: 53mm
+              </ng-container>
+            </p>
           </div>
         </div>
       </div>
@@ -107,7 +291,14 @@
     </div>
   </div>
 
-  <h2 class="product-type-title hover-green-text">KEKS KORNETI</h2>
+  <h2 class="product-type-title hover-green-text">
+    <ng-container *ngIf="language ==='BOS'">
+      KEKS KORNETI
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      BISCUIT CORNETS
+    </ng-container>
+  </h2>
 
   <div class="product-section mt-20">
     <div class="product-card">
@@ -115,17 +306,52 @@
         <img src="../../../assets/images/final-products/product-5.png" alt="">
       </div>
       <div class="content-part green-background">
-        <h3>KEKS</h3>
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            KEKS
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            BISCUIT
+          </ng-container>
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-5-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper green-border border-left-none opacity-0-to-1">
-          <h3>KEKS KORNET</h3>
+          <h3>
+            <ng-container *ngIf="language ==='BOS'">
+              KEKS KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              BISCUIT CORNET
+            </ng-container>
+          </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 160mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 70mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 160mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 160mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 70mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 70mm
+              </ng-container>
+            </p>
             <!-- <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 66mm</p> -->
           </div>
         </div>
@@ -134,20 +360,49 @@
 
     <div class="product-card">
       <div class="content-part green-background">
-        <h3>SUPER</h3>
+        <h3>
+          SUPER
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-5-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper green-border border-right-none opacity-1-to-0">
           <h3>
-            SUPER KEKS KORNET <br>
-            <div>/ ČOKO KEKS KORNET</div>
+            <ng-container *ngIf="language ==='BOS'">
+              SUPER KEKS KORNET <br>
+              <div>/ ČOKO KEKS KORNET</div>
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              SUPER BISCUIT CORNET <br>
+              <div>/ CHOCO BISCUIT CORNET</div>
+            </ng-container>
           </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 160mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 70mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 160mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 160mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 70mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 70mm
+              </ng-container>
+            </p>
             <!-- <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 66mm</p> -->
           </div>
         </div>
@@ -161,20 +416,54 @@
   <div class="product-section mb-50">
     <div class="product-card">
       <div class="content-part green-background">
-        <h3>ŠARENI</h3>
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            ŠARENI
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            COLORFUL
+          </ng-container>
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-5-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper green-border border-right-none opacity-1-to-0">
           <h3>
-            ŠARENI KORNET <br>
-            <div>/ KORNET SA MRVICAMA</div>
+            <ng-container *ngIf="language ==='BOS'">
+              ŠARENI KORNET <br>
+              <div>/ KORNET SA MRVICAMA</div>
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              COLORFUL CORNET <br>
+              <div>/ CORNET WITH CRUMBS</div>
+            </ng-container>
           </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 160mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 70mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 160mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 160mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 70mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 70mm
+              </ng-container>
+            </p>
             <!-- <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 66mm</p> -->
           </div>
         </div>
@@ -188,17 +477,47 @@
         <img src="../../../assets/images/final-products/product-8.png" alt="">
       </div>
       <div class="content-part black-background">
-        <h3>OREO</h3>
+        <h3>
+          OREO
+        </h3>
         <div class="d-flex jc-center">
           <img class="dimensions" src="../../../assets/images/final-products/product-5-dimensions.svg" alt="">
         </div>
         <div class="inner-content-wrapper black-border border-left-none opacity-0-to-1">
-          <h3>OREO KEKS KORNET</h3>
+          <h3>
+            <ng-container *ngIf="language ==='BOS'">
+              OREO KEKS KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              OREO BISCUIT CORNET
+            </ng-container>
+          </h3>
 
           <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 160mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 70mm</p>
+            <p class="dark-text middle-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                DIMENZIJE:
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                DIMENSIONS:
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VISINA: 160mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                HEIGHT: 160mm
+              </ng-container>
+            </p>
+            <p class="dark-text small-paragraph">
+              <ng-container *ngIf="language ==='BOS'">
+                VANJSKI Ø: 70mm
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                OUTER Ø: 70mm
+              </ng-container>
+            </p>
             <!-- <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 66mm</p> -->
           </div>
         </div>
@@ -206,7 +525,14 @@
     </div>
   </div>
 
-  <h2 class="product-type-title hover-pink-text">KEKS KORPICE</h2>
+  <h2 class="product-type-title hover-pink-text">
+    <ng-container *ngIf="language ==='BOS'">
+      KEKS KORPICE
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      BISCUIT BASKETS
+    </ng-container>
+  </h2>
   
   <div class="product-section mb-50 mt-20">
 
@@ -218,11 +544,24 @@
 
     <div class="product-card">
       <div class="content-part pink-background jc-center" >
-        <h3>KORPICE</h3>
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            KORPICE
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            BASKETS
+          </ng-container>
+        </h3>
         <div class="inner-content-wrapper pink-border border-right-none opacity-1-to-0">
           <h3>
+            <ng-container *ngIf="language ==='BOS'">
             KEKS KORPICE<br>
           <div>/ ZDJELICE</div>
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+            BISCUIT BASKETS<br>
+          <div>/ BOWLS</div>
+          </ng-container>
           </h3>
         </div>
       </div>
@@ -233,7 +572,14 @@
 
   </div>
 
-  <h2 class="product-type-title hover-pink-text">KEKS TROKUTIĆI</h2>
+  <h2 class="product-type-title hover-pink-text">
+    <ng-container *ngIf="language ==='BOS'">
+      KEKS TROKUTIĆI
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      BISCUIT TRIANGLES
+    </ng-container>
+  </h2>
   
   <div class="product-section mb-50 mt-20">
     <div class="product-card">
@@ -242,12 +588,23 @@
       </div>
       <div class="content-part pink-background jc-center" >
         <h3>
-          TROKU- <br>
-          <div>TIĆI</div>
+          <ng-container *ngIf="language ==='BOS'">
+            TROKU- <br>
+            <div>TIĆI</div>
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            TRIA- <br>
+            <div>NGLES</div>
+          </ng-container>
         </h3>
         <div class="inner-content-wrapper pink-border border-left-none opacity-1-to-0">
           <h3>
-            KEKS TROKUTIĆI
+            <ng-container *ngIf="language ==='BOS'">
+              KEKS TROKUTIĆI
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              BISCUIT TRIANGLES
+            </ng-container>
           </h3>
         </div>
       </div>
@@ -264,28 +621,37 @@
   </div>
 
 
-  <h2 class="product-type-title hover-blue-text">TRGOVAČKI KORNETI</h2>
+  <h2 class="product-type-title hover-blue-text">
+    <ng-container *ngIf="language ==='BOS'">
+      TRGOVAČKI KORNETI
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      COMMERCIAL CORNETS
+    </ng-container>
+  </h2>
   
   <div class="product-section mb-50 mt-20">
     <div class="product-card">
       <div class="content-part blue-background jc-center" >
-        <h3>TRGO- <br>
-          <div>VAČKI</div></h3>
-        <!-- <div class="d-flex jc-center">
-          <img class="dimensions" src="../../../assets/images/final-products/product-5-dimensions.svg" alt="">
-        </div> -->
+        <h3>
+          <ng-container *ngIf="language ==='BOS'">
+            TRGO- <br>
+            <div>VAČKI</div>
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            COMME- <br>
+            <div>RCIAL</div>
+          </ng-container>
+        </h3>
         <div class="inner-content-wrapper blue-border border-right-none opacity-1-to-0">
           <h3>
-            TRGOVAČKI KORNET
+            <ng-container *ngIf="language ==='BOS'">
+              TRGOVAČKI KORNET
+            </ng-container>
+            <ng-container *ngIf="language ==='EN'">
+              COMMERCIAL CORNET
+            </ng-container>
           </h3>
-
-          <!--
-            <div class="paragraphs">
-            <p class="dark-text middle-paragraph">DIMENZIJE:</p>
-            <p class="dark-text small-paragraph">VISINA: 160mm</p>
-            <p class="dark-text small-paragraph">VANJSKI Ø: 70mm</p>
-             <p class="dark-text small-paragraph">UNUTRAŠNJI Ø: 66mm</p>
-          </div> -->
         </div>
       </div>
       <div class="img-part blue-stripes">
@@ -301,7 +667,14 @@
     </div>
   </div>
 
-  <h2 class="product-type-title hover-yellow-text">OBLATNE / OBLANDE</h2>
+  <h2 class="product-type-title hover-yellow-text">
+    <ng-container *ngIf="language ==='BOS'">
+      OBLATNE / OBLANDE
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      WAFERS
+    </ng-container>
+  </h2>
 
   <div class="product-section mb-50 mt-20">
     <div class="product-card">
@@ -312,7 +685,14 @@
     </div>
   </div>
 
-  <h2 class="product-type-title hover-green-text">ROLERI</h2>
+  <h2 class="product-type-title hover-green-text">
+    <ng-container *ngIf="language ==='BOS'">
+      ROLERI
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      ROLLERS
+    </ng-container>
+  </h2>
 
   <div class="product-section mb-50 mt-20">
     <div class="product-card">
