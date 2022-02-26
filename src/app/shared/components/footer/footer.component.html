@@ -3,22 +3,50 @@
   <div class="section-footer">
     <div class="footer-column column-1">
       <div class="footer-tab">
-        <h5 class="footer-title">Adresa</h5>
+        <h5 class="footer-title">
+          <ng-container *ngIf="language ==='BOS'">
+            Adresa
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            Address
+          </ng-container>
+        </h5>
         <h6 class="footer-subtitle"> Žarka Zgonjanina br.64 </h6>
         <h6 class="footer-subtitle"> Prijedor </h6>
         <h6 class="footer-subtitle"> 79101</h6>
       </div>
       <div class="footer-tab">
-        <h5 class="footer-title">Kontakt</h5>
+        <h5 class="footer-title">
+          <ng-container *ngIf="language ==='BOS'">
+            Kontakt
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            Contact
+          </ng-container>
+        </h5>
         <a class="footer-subtitle" href="mailto: info@eurokornet.ba">info@eurokornet.ba</a>
         <a class="footer-subtitle" href="mailto: jadran_rasic@hotmail.com">jadran_rasic@hotmail.com</a>
         <a class="footer-subtitle" href="tel:065520792">Tel: 065520792</a>
         <a class="footer-subtitle" href="tel:065234821">Tel: 065234821</a>
       </div>
       <div class="footer-tab">
-        <h5 class="footer-title">Radno vrijeme</h5>
-        <h6 class="footer-subtitle">Svaki dan</h6>
-        <h6 class="footer-subtitle">8:00 - 20:00</h6>
+        <h5 class="footer-title">
+          <ng-container *ngIf="language ==='BOS'">
+            Radno vrijeme
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            Daily
+          </ng-container>
+        </h5>
+        <h6 class="footer-subtitle" *ngIf="language ==='BOS'">Svaki dan</h6>
+        <h6 class="footer-subtitle">
+          <ng-container *ngIf="language ==='BOS'">
+            8:00 - 20:00
+          </ng-container>
+          <ng-container *ngIf="language ==='EN'">
+            8AM - 8PM
+          </ng-container>
+        </h6>
       </div>
     </div>
     <div class="footer-column column-2">
