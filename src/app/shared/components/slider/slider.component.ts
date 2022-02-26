@@ -34,10 +34,14 @@ export class SliderComponent implements OnInit {
         spaceBetween: 10,
       },
       1250: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 20
       },
-      800: {
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      100: {
         slidesPerView: 1,
         spaceBetween: 20
       },

@@ -15,7 +15,7 @@
   }
 
   a {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     text-transform: initial;
     font-family: "Barlow Condensed", sans-serif;
@@ -51,7 +51,7 @@ h6 {
 
 .footer-subtitle,
 a.footer-subtitle {
-  font-size: 24px !important;
+  font-size: 24px ;
 
   &:hover {
     color: #ccc;
@@ -121,6 +121,7 @@ a.footer-subtitle {
   }
   .footer-column{
     flex-direction: column;
+    gap: 24px;
   }
   .section-footer{
     flex-direction: column;
@@ -140,5 +141,19 @@ a.footer-subtitle {
   .footer-rights{
     order: 2;
     margin-top: 20px;
+  }
+  .footer-title{
+    font-size: 24px;
+  }
+  .footer-subtitle{
+    font-size: 16px;
+  }
+  .footer-logo{
+    padding: 50px 0;
+  }
+  .footer-tab{
+    a{
+      font-size: 16px;
+    }
   }
 }

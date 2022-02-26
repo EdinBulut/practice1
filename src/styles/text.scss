@@ -34,9 +34,10 @@ p {
 
 h1 {
   font-size: 140px;
-  line-height: 0px;
+  line-height: 1;
   font-weight: 600;
   letter-spacing: 2px;
+  margin: 0;
 }
 
 h2 {
@@ -96,6 +97,7 @@ h5 {
 }
 
 @media only screen and (max-width: 600px) {
+
   h1 {
     font-size: 60px;
     line-height: 60px;
@@ -112,5 +114,13 @@ h5 {
 
   h5 {
     font-size: 20px;
+  }
+  
+}
+@media only screen and (max-width: 912px) {
+  .parallax-init{
+    h1,h2,h3{
+      text-align: center;
+    }
   }
 }

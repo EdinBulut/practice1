@@ -110,7 +110,7 @@
 .menu-btn {
   z-index: 30;
   position: absolute !important;
-  right: 20px;
+  right: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,5 +240,14 @@
 @media (max-width:450px) {
   .menu {
    width: 100%;
+  }
+ }
+@media (max-width:768px) {
+  .logo-wrapper{
+    left: 16px;
+    transform: translateX(0);
+  }
+  .logo-wrapper  img{
+    width: 60px;
   }
  }
