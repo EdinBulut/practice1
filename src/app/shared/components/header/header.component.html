@@ -4,16 +4,44 @@
         Žarka Zgonjanina 64, Prijedor 79101 | Svaki dan 8:00 - 20:00
       </ng-container>
       <ng-container *ngIf="language ==='EN'">
-        Žarka Zgonjanina 64, Prijedor 79101 | Daily 8AM - 20:00
+        Žarka Zgonjanina 64, Prijedor 79101 | Daily 8AM - 8PM
       </ng-container>
     </h3>
   </a>
 <div class="nav-container" [ngClass]="{'nav-inverse': isScrolled}">
     <ul>
-        <li routerLink="home" routerLinkActive="active">Početna</li>
-        <li routerLink="products" routerLinkActive="active">Proizvodi</li>
-        <li routerLink="about-us" routerLinkActive="active">O nama</li>
-        <li routerLink="contact" routerLinkActive="active">Kontakt</li>
+        <li routerLink="home" routerLinkActive="active">
+            <ng-container *ngIf="language ==='BOS'">
+                Početna
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                Home
+              </ng-container>    
+        </li>
+        <li routerLink="products" routerLinkActive="active">
+            <ng-container *ngIf="language ==='BOS'">
+                Proizvodi
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                Products
+              </ng-container>
+        </li>
+        <li routerLink="about-us" routerLinkActive="active">
+            <ng-container *ngIf="language ==='BOS'">
+                O nama
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                About us
+            </ng-container>
+        </li>
+        <li routerLink="contact" routerLinkActive="active">
+            <ng-container *ngIf="language ==='BOS'">
+                Kontakt
+              </ng-container>
+              <ng-container *ngIf="language ==='EN'">
+                Contact
+            </ng-container>
+        </li>
     </ul>
     <div class="logo-wrapper">
         <img src="../../../../assets/images/logo/transparent-logo.svg" alt="">
