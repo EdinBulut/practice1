@@ -37,7 +37,8 @@
               "src/styles/boxes.scss",
               "src/styles/sections.scss",
               "src/styles/parallax.scss",
-              "src/styles/flexbox.scss"
+              "src/styles/flexbox.scss",
+              "./node_modules/leaflet/dist/leaflet.css"
             ],
             "scripts": []
           },

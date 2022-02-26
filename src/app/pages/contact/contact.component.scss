@@ -1,8 +1,46 @@
 .contact-wrapper {
-  height: calc(100vh - 364px);
+  min-height: calc(100vh - 424px);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-box {
+  width: fit-content;
+  height: fit-content;
+  padding: 30px; 
+  // margin: 0 30px;
+  background: repeating-linear-gradient(
+    -30deg,
+    #000,
+    #000 10px,
+    #fff 10px,
+    #fff 20px
+  );
 }
 
 
+.map-wrapper {
+  display: flex;
+  opacity: 0;
+  animation: opake 1s ease forwards .5s;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 100vw;
+  max-width: 420px;
+  height: 250px;
+  z-index: 5;
+}
 
 
-
+@media (max-width: 520px) {
+  .map-box {
+    width: 100%;
+  }
+  .map-wrapper {
+    width: 100%;
+  }
+ }
