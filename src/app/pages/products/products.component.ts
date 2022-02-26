@@ -11,6 +11,10 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   constructor(private languageService: LanguageService) { }
 
   ngOnInit(): void {
+            
+    if (localStorage.getItem('language')) {
+      this.language = localStorage.getItem('language') as string
+    }
     
     this.languageService.getLanguage()
     .subscribe(data => this.language = data)

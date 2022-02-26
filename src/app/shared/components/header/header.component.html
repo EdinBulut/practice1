@@ -1,57 +1,61 @@
-<a class="section-info " [routerLink]="['/contact']">
-    <h3>
+<a class="section-info ">
+  <h3 [routerLink]="['/contact']">
+    <ng-container *ngIf="language ==='BOS'">
+      Žarka Zgonjanina 64, Prijedor 79101 | Svaki dan 8:00 - 20:00
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      Žarka Zgonjanina 64, Prijedor 79101 | Daily 8AM - 8PM
+    </ng-container>
+  </h3>
+  <a class="lang-selection" (click)=" changeLanguage()">
+    <img [style.filter]="language === 'BOS'? 'grayscale(1)': 'none'"
+    src="/assets/images/language/united-kingdom-static.svg" alt="">
+  </a>
+</a>
+<div class="nav-container" [ngClass]="{'nav-inverse': isScrolled}">
+  <ul>
+    <li routerLink="home" routerLinkActive="active">
       <ng-container *ngIf="language ==='BOS'">
-        Žarka Zgonjanina 64, Prijedor 79101 | Svaki dan 8:00 - 20:00
+        Početna
       </ng-container>
       <ng-container *ngIf="language ==='EN'">
-        Žarka Zgonjanina 64, Prijedor 79101 | Daily 8AM - 8PM
+        Home
       </ng-container>
-    </h3>
-  </a>
-<div class="nav-container" [ngClass]="{'nav-inverse': isScrolled}">
-    <ul>
-        <li routerLink="home" routerLinkActive="active">
-            <ng-container *ngIf="language ==='BOS'">
-                Početna
-              </ng-container>
-              <ng-container *ngIf="language ==='EN'">
-                Home
-              </ng-container>    
-        </li>
-        <li routerLink="products" routerLinkActive="active">
-            <ng-container *ngIf="language ==='BOS'">
-                Proizvodi
-              </ng-container>
-              <ng-container *ngIf="language ==='EN'">
-                Products
-              </ng-container>
-        </li>
-        <li routerLink="about-us" routerLinkActive="active">
-            <ng-container *ngIf="language ==='BOS'">
-                O nama
-              </ng-container>
-              <ng-container *ngIf="language ==='EN'">
-                About us
-            </ng-container>
-        </li>
-        <li routerLink="contact" routerLinkActive="active">
-            <ng-container *ngIf="language ==='BOS'">
-                Kontakt
-              </ng-container>
-              <ng-container *ngIf="language ==='EN'">
-                Contact
-            </ng-container>
-        </li>
-    </ul>
-    <div class="logo-wrapper">
-        <img src="../../../../assets/images/logo/transparent-logo.svg" alt="">
-    </div>
-    <div class="nav-right-social">
-        <a href="" target="blank"><img src="assets/images/facebook-logo.png" alt=""></a>
-        <a href="" target="blank"><img src="assets/images/instagram.png" alt=""></a>
-        <a href="https://www.google.com/maps/place/Eurokornet/@44.9824749,16.6967557,16.75z/data=!4m5!3m4!1s0x476733747135e579:0xc106fafb5a8dd02a!8m2!3d44.9829935!4d16.6985622" 
-        target="blank">
-            <img src="assets/images/location.png" alt="">
-        </a>
-    </div>
+    </li>
+    <li routerLink="products" routerLinkActive="active">
+      <ng-container *ngIf="language ==='BOS'">
+        Proizvodi
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Products
+      </ng-container>
+    </li>
+    <li routerLink="about-us" routerLinkActive="active">
+      <ng-container *ngIf="language ==='BOS'">
+        O nama
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        About us
+      </ng-container>
+    </li>
+    <li routerLink="contact" routerLinkActive="active">
+      <ng-container *ngIf="language ==='BOS'">
+        Kontakt
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Contact
+      </ng-container>
+    </li>
+  </ul>
+  <div class="logo-wrapper" routerLink="home">
+    <img src="../../../../assets/images/logo/transparent-logo.svg" alt="">
+  </div>
+  <div class="nav-right-social">
+    <a href="" target="blank"><img src="assets/images/facebook-logo.png" alt=""></a>
+    <a href="" target="blank"><img src="assets/images/instagram.png" alt=""></a>
+    <a href="https://www.google.com/maps/place/Eurokornet/@44.9824749,16.6967557,16.75z/data=!4m5!3m4!1s0x476733747135e579:0xc106fafb5a8dd02a!8m2!3d44.9829935!4d16.6985622"
+      target="blank">
+      <img src="assets/images/location.png" alt="">
+    </a>
+  </div>
 </div>

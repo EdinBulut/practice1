@@ -10,7 +10,14 @@
 </div>
 <div class="section-about-info opake-animation">
   <div class="about-us-box about-padding">
-    <h3 class="light-blue-text">O nama</h3>
+    <h3 class="light-blue-text">
+      <ng-container *ngIf="language ==='BOS'">
+        O nama
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        About us
+      </ng-container>
+    </h3>
     <h4 class="content-subtitle" style="margin-top: -10px;">
       <ng-container *ngIf="language ==='BOS'">
         Osiguravamo vrhunske proizvode godinama

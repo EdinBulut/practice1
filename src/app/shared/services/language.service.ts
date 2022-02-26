@@ -13,7 +13,7 @@ export class LanguageService {
     return this.language.asObservable()
   }
   
-  postCurrentConversation(language: string): void {
+  postLanguage(language: string): void {
     this.language.next(language)
   }
 }

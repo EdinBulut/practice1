@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  position: relative;
 
   h3 {
     color: #E8E8E8;
@@ -22,7 +22,7 @@ a.section-info {
   }
 
   &:hover {
-    background-color: #2f3640;
+    background-color: #121418;
   }
 }
 

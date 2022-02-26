@@ -21,8 +21,17 @@ export class HeaderComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.languageService.getLanguage()
-    .subscribe(data => this.language = data)
+    
+    if (localStorage.getItem('language')) {
+      this.language = localStorage.getItem('language') as string
+    }
+  }
+
+  changeLanguage() {
+    if (this.language === 'BOS') this.language = 'EN'
+    else this.language = 'BOS'
+    this.languageService.postLanguage(this.language)
+    localStorage.setItem('language', this.language)
   }
 
 }

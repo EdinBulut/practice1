@@ -6,7 +6,14 @@
         <img src="../../../assets/images/logo/transparent-logo-white.svg" alt="">
       </div>
 
-      <h3>Tradicija koja traje već više od 25 godina</h3>
+      <h3>
+        <ng-container *ngIf="language ==='BOS'">
+          Tradicija koja traje već više od 25 godina
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+          A tradition that last for over 25 years
+        </ng-container>
+      </h3>
       <h1>Eurokornet</h1>
       <h2>Prijedor</h2>
     </div>
@@ -15,32 +22,99 @@
   <div class="flavor-box box-1 image-box">
   </div>
   <div class="flavor-box about-padding">
-    <h3 class="pink-text">Istorija i tradicija</h3>
-    <h4 class="content-subtitle">Sa Vama smo već duže od 25 godina</h4>
+    <h3 class="pink-text">
+      <ng-container *ngIf="language ==='BOS'">
+        Istorija i tradicija
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        History & tradition
+      </ng-container>
+    </h3>
+    <h4 class="content-subtitle">
+      <ng-container *ngIf="language ==='BOS'">
+        Sa Vama smo već duže od 25 godina
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        We've been with you for over 25 years
+      </ng-container>
+    </h4>
 
     <p class="dark-text">
-      Duga istorija proizvodnje korneta u našoj porodici garantuje visokokvalitetne proizvode i prvoklasnu uslugu.
+      <ng-container *ngIf="language ==='BOS'">
+        Duga istorija proizvodnje korneta u našoj porodici garantuje 
+        visokokvalitetne proizvode i prvoklasnu uslugu
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        The long history of cornet production in our family guarantees 
+        high-quality products and first-class service
+      </ng-container>
     </p>
     <a class="button button-dark" [routerLink]="['/products']">
-      <h5 class="pink-text">POGLEDAJTE ŠTA NUDIMO</h5>
+      <h5 class="pink-text">
+        <ng-container *ngIf="language ==='BOS'">
+          POGLEDAJTE ŠTA NUDIMO
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+          LOOK AT WHAT WE OFFER
+        </ng-container>
+      </h5>
     </a>
   </div>
 </div>
 
 <div class="parallax-init parallax-bg1">
-  <h3>Dostavljamo širom BiH</h3>
-    <h1>Naruči i ti</h1>
-    <!-- <div class="button button-white">
-      <h5>Naruci online</h5>
-    </div> -->
+  <h3>
+    <ng-container *ngIf="language ==='BOS'">
+      Dostavljamo širom BiH
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      We deliver throughout all B&H
+    </ng-container>
+  </h3>
+    <h1>
+      <ng-container *ngIf="language ==='BOS'">
+        Naruči i ti
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Order your favorite product
+      </ng-container>
+    </h1>
 </div>
 <div class="section-flavor">
   <div class="flavor-box about-padding">
-    <h3 class="yellow-text">Naš recept</h3>
-    <h4 class="content-subtitle">Najviše pažnje posvećeno kvaliteti</h4>
-    <p class="dark-text">Čvrsti, hrskavi, odličnog ukusa i savršeno pečeni naš su recept za zadovoljnog kupca.</p>
+    <h3 class="yellow-text">
+      <ng-container *ngIf="language ==='BOS'">
+        Naš recept
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Our recipe
+      </ng-container>
+    </h3>
+    <h4 class="content-subtitle">
+      <ng-container *ngIf="language ==='BOS'">
+        Najviše pažnje posvećeno kvaliteti
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Most attention paid to quality
+      </ng-container>
+    </h4>
+    <p class="dark-text">
+      <ng-container *ngIf="language ==='BOS'">
+        Čvrsti, hrskavi, odličnog ukusa i savršeno pečeni naš su recept za zadovoljnog kupca
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Firm, crunchy, great tasting and perfectly baked are our recipe for a satisfied customer
+      </ng-container>
+    </p>
     <a class="button button-dark" [routerLink]="['/products']">
-      <h5 class="yellow-text">Pogledajte</h5>
+      <h5 class="yellow-text">
+        <ng-container *ngIf="language ==='BOS'">
+          Pogledajte
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+          See our offer
+        </ng-container>
+      </h5>
     </a>
   </div>
   <div class="flavor-box box-2 image-box">
@@ -49,10 +123,31 @@
 
 <div class="parallax-init parallax-bg2">
   
-    <h1>Porodično zanimanje</h1>
-    <h3>Od prvog dana su svi, od najmlađih do najstarijih bili uključeni</h3>
+    <h1>
+      <ng-container *ngIf="language ==='BOS'">
+        Porodično zanimanje
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Family occupation
+      </ng-container>
+    </h1>
+    <h3>
+      <ng-container *ngIf="language ==='BOS'">
+        Od prvog dana su svi, od najmlađih do najstarijih bili uključeni
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        From the first day, everyone from the youngest to the oldest was involved
+      </ng-container>
+    </h3>
     <a class="button button-white" [routerLink]="['/about-us']">
-      <h5>O NAMA</h5>
+      <h5>
+        <ng-container *ngIf="language ==='BOS'">
+          O NAMA
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+          ABOUT US
+        </ng-container>
+      </h5>
     </a>
 </div>
 
@@ -60,20 +155,62 @@
   <div class="flavor-box box-3 image-box">
   </div>
   <div class="flavor-box about-padding">
-    <h3 class="green-text">U Prijedoru smo</h3>
-    <h4 class="content-subtitle">Posjeti nas u gradu na rijeci Sani</h4>
+    <h3 class="green-text">
+      <ng-container *ngIf="language ==='BOS'">
+        U Prijedoru smo
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        We are in Prijedor
+      </ng-container>
+    </h3>
+    <h4 class="content-subtitle">
+      <ng-container *ngIf="language ==='BOS'">
+        Posjeti nas u gradu na rijeci Sani
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Visit us in the city on the river Sana
+      </ng-container>
+    </h4>
     <a class="button button-dark mt-40" target="blank"
     href="https://www.google.com/maps/place/Eurokornet/@44.9824749,16.6967557,16.75z/data=!4m5!3m4!1s0x476733747135e579:0xc106fafb5a8dd02a!8m2!3d44.9829935!4d16.6985622">
-      <h5 class="green-text">NAŠA LOKACIJA</h5>
+      <h5 class="green-text">
+        <ng-container *ngIf="language ==='BOS'">
+          NAŠA LOKACIJA
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+          OUR LOCATION
+        </ng-container>
+      </h5>
     </a>
   </div>
 </div>
 
 <div class="parallax-init parallax-bg3">
-  <h3>Osjeti ukus preko slike</h3>
-    <h1>Čvrsti i hrskavi</h1>
+  <h3>
+    <ng-container *ngIf="language ==='BOS'">
+      Osjeti ukus preko slike
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      Feel the taste over the picture
+    </ng-container>
+  </h3>
+    <h1>
+      <ng-container *ngIf="language ==='BOS'">
+        Čvrsti i hrskavi
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Firm and crunchy
+      </ng-container>
+    </h1>
     <a class="button button-white" (click)="scrollToBottom()">
-      <h5>Galerija</h5>
+      <h5>
+        <ng-container *ngIf="language ==='BOS'">
+          Galerija
+        </ng-container>
+        <ng-container *ngIf="language ==='EN'">
+          Gallery
+        </ng-container>
+      </h5>
     </a>
 </div>
 
@@ -85,97 +222,3 @@
 </div>
 
 
-<!-- 
-<a class="section-info " [routerLink]="['/contact']">
-  <h3>
-    Žarka Zgonjanina 64, Prijedor 79000 | Daily 7AM - 5PM
-  </h3>
-</a>
-
-<div class="opake-animation">
-  <div class="section-hiro first-hero">
-    <div class="inner-section-wrapper">
-
-      <div class="logo-wrapper">
-        <img src="../../../assets/images/logo/transparent-logo-white.svg" alt="">
-      </div>
-
-      <h3>Tradicija koja traje već više od 25 godina</h3>
-      <h1>Eurokornet</h1>
-      <h2>Prijedor</h2>
-    </div>
-  </div>
-
-  <div class="section-flavor">
-    <div class="flavor-box box-1 image-box">
-    </div>
-    <div class="flavor-box about-padding">
-      <h3 class="pink-text">Historija i tradicija</h3>
-      <h4 class="content-subtitle">Sa Vama smo već duže od 25 godina</h4>
-
-      <p class="dark-text">
-        Duga historija proizvodnje korneta u nasoj porodici garantuje visokokvalitetne proizvode i prvoklasnu uslugu.
-      </p>
-      <a class="button button-dark" [routerLink]="['/products']">
-        <h5 class="pink-text">POGLEDAJTE ŠTA NUDIMO</h5>
-      </a>
-    </div>
-  </div>
-
-  <div class="parallax-window" data-parallax="scroll" data-z-index="-100"
-    data-image-src="assets/images/old-images/old-images-4.jpg">
-    <h1>Porodično zanimanje</h1>
-    <h3>Od prvog dana su svi, od najmlađih do najstarijih bili uključeni</h3>
-    <a class="button button-white" [routerLink]="['/about-us']">
-      <h5>O NAMA</h5>
-    </a>
-  </div>
-
-  <div class="section-flavor">
-    <div class="flavor-box about-padding">
-      <h3 class="yellow-text">Naš recept</h3>
-      <h4 class="content-subtitle">Najviše pažnje posvećeno kvaliteti</h4>
-      <p class="dark-text">Čvrsti, hrskavi, odličnog ukusa i savršeno pečeni naš su recept za zadovoljnog kupca.</p>
-      <div class="button button-dark">
-        <h5 class="yellow-text">Pogledajte</h5>
-      </div>
-    </div>
-    <div class="flavor-box box-2 image-box">
-    </div>
-  </div>
-
-  <div class="parallax-window" data-parallax="scroll" data-z-index="-99" data-image-src="assets/images/ice-cream2.jpg">
-    <h3>Nabavi svoje</h3>
-    <h1>Mi dostavljamo</h1>
-    <div class="button button-white">
-      <h5>Naruci online</h5>
-    </div>
-  </div>
-
-  <div class="section-flavor">
-    <div class="flavor-box box-3 image-box">
-    </div>
-    <div class="flavor-box about-padding">
-      <h3 class="dark-text">Desserts</h3>
-      <h6>Ice cream goodies</h6>
-      <p class="dark-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit
-        Text” or double click
-        me to add your own content and make changes to the font.</p>
-      <div class="button button-dark">
-        <h5 class="dark-text">Menu</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/ice-cream1.png">
-    <h3>Enjoy</h3>
-    <h1>Dairy Free</h1>
-    <div class="button button-white">
-      <h5>Menu</h5>
-    </div>
-  </div>
-  
-  <app-slider></app-slider>
-
-</div>
- -->
