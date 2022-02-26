@@ -10,6 +10,8 @@ import { LanguageService } from '../../services/language.service';
 })
 
 export class HeaderComponent implements OnInit {
+  mobile = false;
+  openMenu = false;
  
   isScrolled = false;
   isTransparent = false;
@@ -19,12 +21,16 @@ export class HeaderComponent implements OnInit {
   scrollEvent() {
       window.pageYOffset >= 60 ? (this.isScrolled = true) : (this.isScrolled = false);
   }
+  @HostListener("window:resize", [])
+  onResize() {
+    (window.innerWidth <= 992) ? this.mobile = true : this.mobile = false
+  }
   
   ngOnInit(): void {
-    
     if (localStorage.getItem('language')) {
       this.language = localStorage.getItem('language') as string
     }
+    if (window.innerWidth < 992) this.mobile = true
   }
 
   changeLanguage() {

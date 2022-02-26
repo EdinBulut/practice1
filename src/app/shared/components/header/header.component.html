@@ -13,7 +13,7 @@
   </a>
 </a>
 <div class="nav-container" [ngClass]="{'nav-inverse': isScrolled}">
-  <ul>
+  <ul *ngIf="!mobile">
     <li routerLink="home" routerLinkActive="active">
       <ng-container *ngIf="language ==='BOS'">
         Početna
@@ -50,7 +50,7 @@
   <div class="logo-wrapper" routerLink="home">
     <img src="../../../../assets/images/logo/transparent-logo.svg" alt="">
   </div>
-  <div class="nav-right-social">
+  <div class="nav-right-social" *ngIf="!mobile">
     <a href="" target="blank"><img src="assets/images/facebook-logo.png" alt=""></a>
     <a href="" target="blank"><img src="assets/images/instagram.png" alt=""></a>
     <a href="https://www.google.com/maps/place/Eurokornet/@44.9824749,16.6967557,16.75z/data=!4m5!3m4!1s0x476733747135e579:0xc106fafb5a8dd02a!8m2!3d44.9829935!4d16.6985622"
@@ -58,4 +58,26 @@
       <img src="assets/images/location.png" alt="">
     </a>
   </div>
+  <div class="menu-btn" *ngIf="mobile" (click)='openMenu = !openMenu' [class.open-burger]='openMenu'>
+    <div class="burger">
+    </div>
+ </div>
+
+ <div class="menu" *ngIf="mobile" [class.open-menu]='openMenu'>
+  <ul class="navigation-mobile">
+    <li >
+      HOME
+    </li>
+    <li >
+      PRODUCTS
+    </li>
+    <li >
+      ABOUT US
+    </li>
+    <li >
+      CONTACT
+    </li>
+    
+  </ul>
+</div>
 </div>
