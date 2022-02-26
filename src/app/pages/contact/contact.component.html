@@ -1,8 +1,12 @@
-<div class="contact-wrapper">
-  <!-- <a class="section-info " [routerLink]="['/contact']">
-    <h3>
-      Žarka Zgonjanina 64, Prijedor 79101 | Svaki dan 8:00 - 20:00
-    </h3>
-  </a> -->
+<div class="contact-wrapper opake-animation">
+
+  <div class="map-box">
+    <div class="map-wrapper">
+      <div style="height: 105%; width: 100%; z-index: 5;"
+      leaflet
+      [leafletOptions]="options"
+      [leafletLayers]="layers">
+    </div>
+  </div>
 
 </div>

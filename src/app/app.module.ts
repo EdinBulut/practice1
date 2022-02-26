@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { LazyimgDirective } from './lazyimg.directive';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LazyimgDirective } from './lazyimg.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    LeafletModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
