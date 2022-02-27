@@ -17,11 +17,20 @@
   margin-top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   transition: background-color .3s ease .1s, margin-top .3s ease;
-
   .logo-wrapper {
     opacity: 1;
   }
 }
+
+.hidden-nav-inverse {
+  margin-top: 0;
+  background-color: transparent;
+  transition: all 1s ease;
+  .logo-wrapper {
+    opacity: 0;
+  }
+}
+
 
 .nav-container ul {
   z-index: 2;
@@ -224,7 +233,7 @@
 // }
 
 .logo-wrapper-mobile {
-  width: 60px;
+  width: 100px;
   height: fit-content;
   position: absolute;
   top: 120px;

@@ -12,7 +12,11 @@
     src="/assets/images/language/united-kingdom-static.svg" alt="">
   </a>
 </a>
-<div class="nav-container" [ngClass]="{'nav-inverse': isScrolled}">
+<div class="nav-container" [ngClass]="{
+  'nav-inverse': isScrolled && !openMenu,
+  'hidden-nav-inverse': openMenu
+}"
+>
   <ul *ngIf="!mobile">
     <li routerLink="home" routerLinkActive="active">
       <ng-container *ngIf="language ==='BOS'">
