@@ -34,7 +34,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    padding: 50px 0 2% 0;
+    padding: 60px 0 2% 0;
     border-bottom: 5px solid #AFAFAF;
 }
 .section-galery::before{
@@ -55,6 +55,8 @@
     top: 0px;
     color: #FFFFFF;
     font-size: 40px;
+	width: 100%;
+	text-align: center;
 }
 
 p.dark-text.description-text {
