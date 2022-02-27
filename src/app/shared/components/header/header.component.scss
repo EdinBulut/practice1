@@ -126,15 +126,15 @@
   // width: 80px;
   height: 100%;
   cursor: pointer;
-  transition: all .6s ease-in-out;
+  transition: all .3s ease-in-out;
   // position: fixed;
   // border: 1px solid #34495e;
 
   .burger {
-    width: 40px;
+    width: 30px;
     height: 4px;
     border-radius: 4px;
-    transition: all .6s ease-in-out;
+    transition: all .3s ease-in-out;
     background-color: #000;
 
   }
@@ -143,19 +143,19 @@
   &::after {
     content: '';
     position: absolute;
-    width: 40px;
+    width: 30px;
     height: 4px;
     border-radius: 4px;
-    transition: all .6s ease-in-out;
+    transition: all .3s ease-in-out;
     background-color: #000;
   }
 
   &::before {
-    transform: translateY(-12px)
+    transform: translateY(-10px)
   }
 
   &::after {
-    transform: translateY(12px)
+    transform: translateY(10px)
   }
 }
 
@@ -187,7 +187,7 @@
   flex-direction: column;
   top: 0;
   right: 0;
-  transition: transform .7s ease-in-out;
+  transition: transform .3s ease-in-out;
   transform: translateX(100%);
   background: rgba(249,219,121, .85);
   z-index: 25;
