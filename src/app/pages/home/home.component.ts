@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   
   scrollToBottom() {
     // window.scroll(0,10000)
-    this.slider.nativeElement.scrollIntoView({behavior: "smooth", block: "start"})
+    this.slider.nativeElement.scrollIntoView({behavior: "smooth", block: "center"})
   }
    
 }

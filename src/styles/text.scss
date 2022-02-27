@@ -66,6 +66,9 @@ h5 {
 .dark-text {
   color: black;
 }
+.white-text{
+	color: #FFFFFF;
+}
 
 .pink-text {
   color: #FFBFB3;
@@ -77,6 +80,9 @@ h5 {
 
 .green-text {
   color: #B5E8D5;
+}
+.light-green-text{
+  color: #BCEE68;
 }
 
 .light-blue-text {
@@ -96,6 +102,26 @@ h5 {
   text-align: start;
 }
 
+@media only screen and (max-width: 1120px) {
+  h1 {
+    font-size: 90px;
+    line-height: 90px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+}
 @media only screen and (max-width: 600px) {
 
   h1 {
@@ -114,6 +140,9 @@ h5 {
 
   h5 {
     font-size: 20px;
+  }
+  .about-us-box h3{
+    font-size: 24px;
   }
   
 }

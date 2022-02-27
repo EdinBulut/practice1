@@ -224,7 +224,7 @@
 // }
 
 .logo-wrapper-mobile {
-  width: 120px;
+  width: 60px;
   height: fit-content;
   position: absolute;
   top: 120px;
@@ -242,6 +242,16 @@
    width: 100%;
   }
  }
+@media (max-width:600px) {
+  .hide-hours{
+    display: none;
+  }
+  .section-info{
+    padding-left: 16px;
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width:768px) {
   .logo-wrapper{
     left: 16px;

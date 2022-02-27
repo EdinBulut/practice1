@@ -14,7 +14,7 @@
 
 }
 .about-padding{
-  padding: 0 5%;
+  padding: 5%;
 }
 h4.content-subtitle {
   font-family: 'Marck Script', cursive;
@@ -60,5 +60,8 @@ h4.content-subtitle {
   .image-box {
     background-size: cover;
     flex-grow: 1;
+  }
+  h4.content-subtitle{
+    text-align: center;
   }
 }

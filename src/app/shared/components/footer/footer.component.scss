@@ -78,7 +78,7 @@ a.footer-subtitle {
 }
 
 .footer-container {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .footer-wrapper {
@@ -114,6 +114,21 @@ a.footer-subtitle {
   align-items: flex-start;
   justify-content: center;
   gap: 48px;
+}
+@media only screen and (max-width: 820px){
+  .footer-title{
+    font-size: 24px;
+  }
+  .footer-subtitle,
+  a.footer-subtitle{
+    font-size: 16px;
+  }
+  .footer-tab{
+    a{
+      font-size: 16px;
+    }
+  }
+  
 }
 @media only screen and (max-width: 600px){
   .footer-wrapper{

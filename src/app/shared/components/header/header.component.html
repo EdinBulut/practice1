@@ -1,10 +1,10 @@
 <a class="section-info ">
   <h3 [routerLink]="['/contact']">
     <ng-container *ngIf="language ==='BOS'">
-      Žarka Zgonjanina 64, Prijedor 79101 | Svaki dan 8:00 - 20:00
+      Žarka Zgonjanina 64<span class="hide-hours">, Prijedor 79101</span> | Svaki dan 8:00 - 20:00
     </ng-container>
     <ng-container *ngIf="language ==='EN'">
-      Žarka Zgonjanina 64, Prijedor 79101 | Daily 8AM - 8PM
+      Žarka Zgonjanina 64<span class="hide-hours">, Prijedor 79101</span> | Daily 8AM - 8PM
     </ng-container>
   </h3>
   <a class="lang-selection" (click)=" changeLanguage()">

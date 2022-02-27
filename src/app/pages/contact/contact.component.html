@@ -1,5 +1,24 @@
-<div class="contact-wrapper opake-animation">
+<div class="section-contact">
+  <h1>
+    <ng-container *ngIf="language ==='BOS'">
+      Kontakt
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      Contact
+    </ng-container>
+  </h1>
+  <h4 class="content-subtitle white-text">
+    <ng-container *ngIf="language ==='BOS'">
+      Ako imate bilo kakvih pitanja
+    </ng-container>
+    <ng-container *ngIf="language ==='EN'">
+      If you have any questions
+    </ng-container> 
+  </h4>
+</div>
 
+<div class="map-section">
+  <div class="contact-wrapper opake-animation">
   <div class="map-box">
     <div class="map-wrapper">
       <div style="height: 105%; width: 100%; z-index: 5;"
@@ -7,6 +26,30 @@
       [leafletOptions]="options"
       [leafletLayers]="layers">
     </div>
+   </div>
   </div>
-
+  </div>
+  <div class="contact-box">
+  <div class="contact-box-inner">
+    <h3 class="light-green-text">
+      <ng-container *ngIf="language ==='BOS'">
+        Kontaktirajte nas
+      </ng-container>
+      <ng-container *ngIf="language ==='EN'">
+        Contact us
+      </ng-container>
+    </h3>
+    <a href="tel:+38765520792"><img src="assets/images/phone.png" alt="">+387 65520792</a>
+    <a href="mailto: info@eurokornet.ba"><img src="assets/images/email.png" alt="">info@eurokornet.ba</a>
+    <a href="
+      https://www.google.com/maps/place/Eurokornet/@44.9824749,16.6967557,16.75z/data=!4m5!3m4!1s0x476733747135e579:0xc106fafb5a8dd02a!8m2!3d44.9829935!4d16.6985622
+      "><img src="assets/images/location.png" alt="">Žarka Zgonjanina 64 Prijedor 71101
+    </a>
+  </div>
+      
+    
+  </div>
 </div>
+  
+
+<!-- </div> -->
